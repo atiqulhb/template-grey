@@ -88,6 +88,10 @@ header {
 	font-size: 48px;
 }
 
+.header-text p {
+	font-size: 18px;
+}
+
 .contents {
 	width: 50%;
 	margin: 0 auto;
@@ -287,8 +291,6 @@ header {
 	border-color: #3a9bb6;
 	background-color: #3a9bb6;
 }
-
-
 
 #contact {
 	width: 100%;
