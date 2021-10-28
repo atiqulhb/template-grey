@@ -6,7 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap" rel="stylesheet">
+	<link href='https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css' rel='stylesheet' />
+	<script src='https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js'></script>
 	<link rel="stylesheet" type="text/css" href="./styles.css">
 	<title></title>
 </head>
@@ -173,12 +175,16 @@
 					<div class="testimonial">
 						<img src="./assets/Gerald Walthorp.jpg" alt="">
 						<h4>Gerald Walthorp</h4>
-						<p>Because our factory is one of the biggest ones in Idaho, we always found it quite challenging to oversee all the processes there without some kind of a sula-contracto Wei the help from these guys, we've Managed to take all our repair,. maintenance needs under control,</p>
+						<p>Because our factory is one of the biggest ones in Idaho, we always found it quite challenging
+							to oversee all the processes there without some kind of a sula-contracto Wei the help from
+							these guys, we've Managed to take all our repair,. maintenance needs under control,</p>
 					</div>
 					<div class="testimonial">
 						<img src="./assets/Steve McQueen.jpg" alt="">
 						<h4>Steve McQueen</h4>
-						<p>As an owner of more than 15 plan, spread ao'ass 5 Rustbek states, I cannot afford myself any kind of downtime That is why I chose this in services company, as I was picking someone to supervise all of our maintenance, repo!, and waste management.</p>
+						<p>As an owner of more than 15 plan, spread ao'ass 5 Rustbek states, I cannot afford myself any
+							kind of downtime That is why I chose this in services company, as I was picking someone to
+							supervise all of our maintenance, repo!, and waste management.</p>
 					</div>
 				</div>
 				<div class="testimonials-controller">
@@ -188,6 +194,86 @@
 			</div>
 		</div>
 	</section>
+
+	<section class="contact">
+		<div class="contents">
+			<h1>Get in Touch</h1>
+			<div class="contact-form-and-map">
+				<div class="contact-us">
+					<p>You can contact us any way that is convenient for you We are available 24,1na tax or email You
+						can also use a qui. contact form below or visit our salon personally We would be happy to answer
+						your questions.</p>
+					<form class="contact-form">
+						<input type="text" name="" id="" placeholder="Name:*">
+						<input type="email" name="" id="" placeholder="Email:*">
+						<input type="tel" name="" id="" placeholder="Phone:*">
+						<textarea name="" id="" cols="30" rows="10" placeholder="Message:*"></textarea>
+						<button type="submit">Send</button>
+					</form>
+				</div>
+				<div id="map"></div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="contents">
+			<div class="about">
+				<h3>About</h3>
+				<p>SUN TEC is a diversified global manufacturing company that brings technolOgy and engineering together to provide innovative solutions to customers in the industrial market.</p>
+			</div>
+			<div class="contacts">
+				<h3>Contacts</h3>
+				<div class="contact-informations">
+					<div class="contact-box">
+						<div class="contact-icon">
+							<img src="./assets/phone-svgrepo-com.svg" alt="">
+						</div>
+						<div class="contact-information">
+							<span>1-800-1234-567</span>
+						</div>
+					</div>
+					<div class="contact-box">
+						<div class="contact-icon">
+							<img src="./assets/mail-svgrepo-com.svg" alt="">
+						</div>
+						<div class="contact-information">
+							<span>info@demolink.org</span>
+						</div>
+					</div>
+					<div class="contact-box">
+						<div class="contact-icon">
+							<img src="./assets/map-marker-alt-svgrepo-com.svg" alt="">
+						</div>
+						<div class="contact-information">
+							<span>4801 South IJni0ersity Drive Suite,</span>
+							<br>
+							<span>United States</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<section class="copyright">
+		<p>&copy;2019 All rights reserved.</p>
+	</section>
+
+	<script>
+		mapboxgl.accessToken = 'pk.eyJ1IjoiYXRpcXVsaGIiLCJhIjoiY2t2YWVubXJhMGVtODJvcGdsaDUzMmI2ZyJ9.2gL_lvlRq_DUsq7t9z1D6Q'
+		const map = new mapboxgl.Map({
+			container: 'map',
+			// style: 'mapbox://styles/mapbox/streets-v11',
+			style: 'mapbox://styles/atiqulhb/ckvaew75o0b4914nnys4vpfwz',
+			center: [-73.935242, 40.730610],
+			zoom: 9
+		})
+
+		const marker = new mapboxgl.Marker({ color: 'red'})
+			.setLngLat([-73.935242, 40.730610])
+			.addTo(map)
+	</script>
 </body>
 
 </html>
