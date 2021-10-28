@@ -1,4 +1,7 @@
-html { box-sizing: border-box }
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
 *, *:before, *:after { box-sizing: inherit }
 a, a:visited {
 	text-decoration: none;
@@ -287,12 +290,12 @@ header {
 
 
 
-.contact {
+#contact {
 	width: 100%;
 	padding: 100px 0;
 }
 
-.contact h1 {
+#contact h1 {
 	text-align: left;
 }
 
